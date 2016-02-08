@@ -1,0 +1,78 @@
+﻿.corect-answer-yes{
+   background-color:rgb(26, 179, 148);
+}
+
+.corect-answer-no{
+   background-color:rgb(237, 85, 101);
+}
+
+.uploadlink {
+     cursor:pointer;
+     color:blue;
+     text-decoration:underline;
+}
+
+.preview-panel {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.table th, .table td { 
+     border-top: none !important; 
+ }
+
+.ui-grid-filter-container { display: none!important; }
+
+.ngcellTemplate {
+padding-left:5px;
+padding-top:5px;
+padding-bottom:5px;
+padding-right:5px;
+vertical-align:central;
+
+}
+
+/*rotate header input table*/
+.table-header-rotated {
+  border-collapse: collapse;
+}
+.csstransforms .table-header-rotated td {
+  width: 30px;
+}
+.no-csstransforms {
+  padding: 5px 10px;
+}
+.table-header-rotated td {
+  text-align: center;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+}
+.csstransforms .table-header-rotated th.rotate {
+  height: 140px;
+  white-space: nowrap;
+}
+.csstransforms .table-header-rotated th.rotate > div {
+  
+  -webkit-transform: translate(7.5px, 107px) rotate(270deg);
+          transform: translate(7.5px, 107px) rotate(270deg);
+  width: 30px;
+}
+.csstransforms .table-header-rotated th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
+.table-header-rotated th.row-header {
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*#dgProjects {
+    height:180px;
+
+}*/
+
+div.estimatedEffort {
+    float: left; 
+    display: inline; 
+    width: 49%;
+}

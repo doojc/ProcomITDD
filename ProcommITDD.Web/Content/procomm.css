@@ -1,0 +1,395 @@
+﻿/* PROCOMM Colors */
+
+.pro-blue {
+    color: #007dc3;
+}
+
+.pro-bluebg {
+    background-color: #007dc3;
+}
+
+.pro-lightbluebg {
+    background-color: #8aa6da;
+}
+
+.pro-orange {
+    color: #e7af3f;
+}
+
+/* End PROCOMM Colors */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(100,100,100);
+}
+
+.text-navy {
+    color: #007dc3;
+}
+
+.btn-primary, .btn-info {
+    border-color: #007dc3;
+    background-color: #007dc3;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:focus:active, .btn-primary:hover:active, .btn-primary.active:hover, .btn-primary.active:focus,
+    .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info, .btn-info:focus:active, .btn-info:hover:active, .btn-info.active:hover, .btn-info.active:focus {
+        background-color: #007dc3;
+        border-color: #007dc3;
+    }
+
+    .btn-primary.btn-outline, .btn-primary.btn-outline:hover {
+        background-color: #007dc3;
+        color: white;
+    }
+
+    .btn-primary.disabled,
+    .btn-primary.disabled:hover,
+    .btn-primary.disabled:focus,
+    .btn-primary.disabled:active,
+    .btn-primary.disabled.active,
+    .btn-primary[disabled],
+    .btn-primary[disabled]:hover,
+    .btn-primary[disabled]:focus,
+    .btn-primary[disabled]:active,
+    .btn-primary.active[disabled],
+    fieldset[disabled] .btn-primary,
+    fieldset[disabled] .btn-primary:hover,
+    fieldset[disabled] .btn-primary:focus,
+    fieldset[disabled] .btn-primary:active,
+    fieldset[disabled] .btn-primary.active {
+        color: inherit;
+        background-color: white;
+        border-color: #e7eaec;
+    }
+
+
+
+/* special links */
+.wizard > .steps .current a,
+.wizard > .steps .current a:hover,
+.wizard > .steps .current a:active {
+    background: #007dc3;
+}
+
+    .wizard > .steps .current a .ibox-title h3,
+    .wizard > .steps .current a .ibox-content h2 i {
+        color: #007dc3;
+    }
+
+    .wizard > .steps .current a .ibox-content {
+        border-top-color: #007dc3;
+    }
+
+.wizard > .steps .done a,
+.wizard > .steps .done a:hover,
+.wizard > .steps .done a:active {
+    background: rgb(100,100,100);
+}
+
+    .wizard > .steps .done a .ibox-content {
+        border-top-color: rgb(100,100,100);
+    }
+
+.wizard > .actions a,
+.wizard > .actions a:hover,
+.wizard > .actions a:active {
+    background: #007dc3;
+}
+
+.wizard > .content > .body {
+    position: inherit;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wizard > .content {
+    background-color: inherit;
+    padding: 0;
+    overflow:visible;
+    margin-bottom : 25px !important;
+}
+
+.wizard > .steps > ul > li {
+    width: 20%;
+}
+
+
+.wizard .content .ibox-content, .wizard .content .ibox-title {
+    /* ensure that the iboxes can be seen on white background */
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background-color: rgb(245,245,246);
+}
+
+/* spacing for fist and last wizard icon */
+.wizard > .steps .first a {
+    margin-left: 0;
+}
+
+.wizard > .steps .last a {
+    margin-right: 0;
+}
+
+.wizard > .steps a,
+.wizard > .steps a:hover,
+.wizard > .steps a:active {
+    border-radius: 0;
+}
+
+.wizard .row-header {
+    vertical-align: middle;
+}
+
+.wizard .table-header-rotated th {
+    align-content: center;
+}
+
+.wizard .progress {
+    border-radius: 0;
+}
+
+.redflag {
+    color: #C3000A;
+}
+/* reports */
+.report-greenbar {
+    background-color: #00af50 !important;
+}
+
+.report-greenicon {
+    color: #00af50;
+}
+
+.report-yellowbar {
+    background-color: #ffc000 !important;
+    color: black;
+}
+
+.report-yellowicon {
+    color: #ffc000;
+}
+
+.report-redbar {
+    background-color: #C3000A !important;
+}
+
+.report-redicon {
+    color: #C3000A;
+}
+
+.report-greenbar, .report-yellowbar, .report-redbar, .report-opriskbar, .report-monriskbar, .report-depriskbar {
+    font-weight: 700;
+}
+
+.report-opriskbar {
+    background-color: #2d76b5 !important;
+}
+
+.report-opriskicon {
+    color: #2d76b5;
+}
+
+.report-monriskbar {
+    background-color: #9ec5e6 !important;
+}
+
+.report-monriskicon {
+    color: #9ec5e6 !important;
+}
+
+.report-depriskbar {
+    background-color: #bbd8ed !important;
+}
+
+.report-depriskicon {
+    color: #bbd8ed !important;
+}
+
+.form-inline .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-control:focus,
+.single-line:focus {
+    border-color: #007dc3 !important;
+}
+
+.ibox-content h2 i {
+    color: #676a6c;
+}
+
+.ibox-title h3 {
+    color: #676a6c;
+}
+
+.wizard .ibox-title .label {
+    margin-right: 5px;
+}
+
+.check-disabled-true {
+    color: #bababf;
+}
+
+.selectedRow {
+    background-color: #f5f5f5;
+}
+
+.deleteOnHover {
+    background-position: -268px -123px;
+    color: #ee162d;
+    /*display: none;*/
+    filter: none;
+    font-size: 30px;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    right: 95px;
+    text-align: center;
+    top: 62px;
+    width: 40px;
+}
+
+.file-box {
+    float: left;
+    width: 170px;
+}
+
+    .file-box:hover .deleteOnHover {
+        display: block;
+    }
+
+    .file-box .deleteFile {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        z-index: 100;
+        background-color: #FFF;
+        padding: 5px 2px 2px;
+        color: #ee162d;
+        font-weight: bold;
+        cursor: pointer;
+        opacity: .2;
+        text-align: center;
+        font-size: 22px;
+        line-height: 10px;
+        border-radius: 50%;
+    }
+
+    .file-box:hover .deleteFile {
+        opacity: 1;
+    }
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    margin-left: 0;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    border-color: #007dc3;
+    background-color: #FFFFFF;
+}
+
+.navbar-default .special_link a {
+    background: #8aa6da !important;
+}
+
+.top-navigation .navbar-brand {
+    background-color: #C3000A;
+}
+
+.top-navigation .nav > li.active > a {
+    color: #007dc3;
+}
+
+.top-navigation .nav > li a:hover,
+.top-navigation .nav > li a:focus {
+    color: #007dc3;
+}
+
+/* progress bar at the top of the page */
+.pace .pace-progress {
+    background-color: #C3000A;
+}
+
+.jvectormap-zoomin,
+.jvectormap-zoomout,
+.jvectormap-goback {
+    background-color: #007dc3;
+}
+
+.label-warning-light,
+.badge-warning-light {
+    background-color: #e7af3f;
+}
+
+a {
+    color: #007dc3;
+}
+
+.progress-bar {
+    background-color: #007dc3;
+}
+
+/* grid*/ /*
+.ui-grid-row.ui-grid-row-selected>[ui-grid-row]>.ui-grid-cell,
+.ui-grid-row.ui-grid-row-selected>[ui-grid-row]>.ui-grid-cell a
+{
+    color: white;
+    background-color:#007dc3;
+}*/
+
+/* tooltips */
+.tooltip-inner {
+    background-color: #007dc3;
+}
+
+.tooltip {
+    filter: inherit;
+}
+
+    .tooltip.in {
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+#launch {
+        margin-bottom : 20px !important;
+}
+
+#world-map {
+    height:300px;
+}
+
+.top-buffer { margin-top:20px; }
+
+.top-buffer50 { margin-top:50px; }
+
+.bottom-buffer {margin-bottom: 20px}
+
+.leftIndent15 {
+    padding-left:15px;
+}
+.fix-height {
+   height:415px;
+}
+.sweet-alert button.confirm{
+   background-color: #ed5565 !important;
+               
+}

@@ -1,0 +1,63 @@
+
+<link href="~/Content/ddPlatform.css" rel="stylesheet" />
+<link href="~/Content/uigrid/ui-grid.min.css" rel="stylesheet" />
+<link href="~/Content/plugins/datapicker/angular-datapicker.css" rel="stylesheet" />
+
+<div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2">
+                <div class="jumbotron fix-height">
+                    <h1>Projects</h1>
+                    <p>
+                        Manage and track your due diligence projects.
+                        A project covers the whole lifecycle of the due diligence activities for a given target company. From scoping of questions to receiving the final result report.
+                    </p>
+                    <p>
+                        <a href="/Project/Create" class="btn btn-primary btn-lg" role="button">Launch New Due Diligence Project</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="no-padding">
+                    <img alt="image" class="img-responsive pull-left" src="/Images/due_dilligence.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="ibox-title text-center">
+                    <h5>Your Projects</h5>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="form-group">
+                                    <input type="text" ng-model="gridApi.grid.columns[2].filters[0].term" placeholder="Search" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-init="getProjectsList()">
+                            <div ng-repeat="project in vm.projects">
+                                <span>{{project.Id}}</span>
+                            </div>
+                            <div ng-repeat="project in projects">
+                                <span>{{project.Id}}</span>
+                            </div>
+                        </div>
+                        <!--<div ng-init="loadProjects()"
+                            <div id="dgProjects" ui-grid="gridOptions"></div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/angularjs/1.4.7/angular.min.js"></script>
+<script src="~/Scripts/plugins/uigrid/ui-grid.min.js"></script>
+<script src="~/Scripts/app/project.js"></script>
+<script src="~/Scripts/plugins/datapicker/angular-datepicker.js"></script>
+

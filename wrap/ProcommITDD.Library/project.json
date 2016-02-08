@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net452": {
+      "wrappedProject": "../../ProcommITDD.Library/ProcommITDD.Library.csproj",
+      "bin": {
+        "assembly": "../../ProcommITDD.Library/obj/{configuration}/ProcommITDD.Library.dll",
+        "pdb": "../../ProcommITDD.Library/obj/{configuration}/ProcommITDD.Library.pdb"
+      },
+      "dependencies": {
+        "AutoMapper": "4.2.0",
+        "EntityFramework": "6.1.3",
+        "Microsoft.AspNet.Identity.Core": "2.2.1",
+        "Microsoft.AspNet.Identity.EntityFramework": "2.2.1",
+        "Microsoft.Owin": "3.0.1",
+        "Microsoft.Owin.Security": "3.0.1",
+        "Owin": "1.0",
+        "System.Web.Mvc": "1.0.0-*"
+      }
+    },
+    "net451": {
+      "wrappedProject": "../../ProcommITDD.Library/ProcommITDD.Library.csproj",
+      "bin": {
+        "assembly": "../../ProcommITDD.Library/obj/{configuration}/ProcommITDD.Library.dll",
+        "pdb": "../../ProcommITDD.Library/obj/{configuration}/ProcommITDD.Library.pdb"
+      },
+      "dependencies": {
+        "AutoMapper": "4.2.0",
+        "EntityFramework": "6.1.3",
+        "Microsoft.AspNet.Identity.Core": "2.2.1",
+        "Microsoft.AspNet.Identity.EntityFramework": "2.2.1",
+        "Microsoft.Owin": "3.0.1",
+        "Microsoft.Owin.Security": "3.0.1",
+        "Owin": "1.0",
+        "System.Web.Mvc": "1.0.0-*"
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53974A11-5576-4230-9C45-2664D552A8C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProcommITDD.Library</RootNamespace>
+    <AssemblyName>ProcommITDD.Library</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.1.0.0-rc1-final\lib\net451\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\DTOs\AnswerDTO.cs" />
+    <Compile Include="Model\DTOs\ChartDataDTO.cs" />
+    <Compile Include="Model\DTOs\ComplianceDTO.cs" />
+    <Compile Include="Model\DTOs\InformantAnswerQuestionDTO.cs" />
+    <Compile Include="Model\DTOs\InformantDTO.cs" />
+    <Compile Include="Model\DTOs\InformantQuestionDTO.cs" />
+    <Compile Include="Model\DTOs\InformantStatusDTO.cs" />
+    <Compile Include="Model\DTOs\InformationRequestDTO.cs" />
+    <Compile Include="Model\DTOs\MatrixDTO.cs" />
+    <Compile Include="Model\DTOs\ProjectPresetQuestionDTO.cs" />
+    <Compile Include="Model\DTOs\ProjectQuestionDTO.cs" />
+    <Compile Include="Model\DTOs\ProjectDTO.cs" />
+    <Compile Include="Model\DTOs\ProjectStatusDTO.cs" />
+    <Compile Include="Model\DTOs\QuestionDTO.cs" />
+    <Compile Include="Model\DTOs\ReportDto.cs" />
+    <Compile Include="Model\DTOs\ReportTopicScoreDto.cs" />
+    <Compile Include="Model\DTOs\ScopeDTO.cs" />
+    <Compile Include="Model\DTOs\TopicDTO.cs" />
+    <Compile Include="Model\DTOs\TopicStatusDTO.cs" />
+    <Compile Include="Model\Entities\Answer.cs" />
+    <Compile Include="Model\Entities\Compliance.cs" />
+    <Compile Include="Model\Entities\Informant.cs" />
+    <Compile Include="Model\Entities\Preset.cs" />
+    <Compile Include="Model\Entities\Project.cs" />
+    <Compile Include="Model\Entities\ProjectInformant.cs" />
+    <Compile Include="Model\Entities\ProjectQuestion.cs" />
+    <Compile Include="Model\Entities\Question.cs" />
+    <Compile Include="Model\Entities\Scope.cs" />
+    <Compile Include="Model\Entities\Topic.cs" />
+    <Compile Include="Model\Enumerations\AnswerYesNo.cs" />
+    <Compile Include="Model\Enumerations\InfoRequestState.cs" />
+    <Compile Include="Model\Enumerations\IssueType.cs" />
+    <Compile Include="Model\Enumerations\ProjectState.cs" />
+    <Compile Include="Model\Enumerations\QuestionType.cs" />
+    <Compile Include="Model\Enumerations\RiskType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.EF\Interfaces\IProjectRepository.cs" />
+    <Compile Include="Repository.EF\DdPlatformContext.cs" />
+    <Compile Include="Repository.EF\Project\ProjectRepository.cs" />
+    <Compile Include="Repository.EF\Project\ProjectRepositoryMock.cs" />
+    <Compile Include="Services\AutoMapperBootStrapper.cs" />
+    <Compile Include="Services\Implementation\ProjectService.cs" />
+    <Compile Include="Services\Interfaces\IProjectService.cs" />
+    <Compile Include="Services\Messaging\ProjectService\GetProjectsByUserIdResponse.cs" />
+    <Compile Include="Services\Messaging\ProjectService\GetProjectsByUserIdRequest.cs" />
+    <Compile Include="Services\ViewModels\AccountViewModels.cs" />
+    <Compile Include="Services\ViewModels\AjaxReponse.cs" />
+    <Compile Include="Services\ViewModels\AnswerViewModel.cs" />
+    <Compile Include="Services\ViewModels\CreateTopicResultModel.cs" />
+    <Compile Include="Services\ViewModels\InfoRequestViewModel.cs" />
+    <Compile Include="Services\ViewModels\InformantCreateModel.cs" />
+    <Compile Include="Services\ViewModels\InformantRequestViewModel.cs" />
+    <Compile Include="Services\ViewModels\PresetProjectQuestionViewModel.cs" />
+    <Compile Include="Services\ViewModels\ProjectCreateModel.cs" />
+    <Compile Include="Services\ViewModels\ProjectPresetQuestionViewModel.cs" />
+    <Compile Include="Services\ViewModels\ProjectQuestionViewModel.cs" />
+    <Compile Include="Services\ViewModels\ProjectSummaryView.cs" />
+    <Compile Include="Services\ViewModels\ProjectViewModel.cs" />
+    <Compile Include="Services\ViewModels\RedFlag.cs" />
+    <Compile Include="Services\ViewModels\ReportModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
