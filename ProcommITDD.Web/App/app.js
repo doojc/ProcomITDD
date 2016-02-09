@@ -6,17 +6,19 @@
 
             $routeProvider.
                 when("/", {
-                    controller: "projectListCtrl",
+                    controller: "ProjectListCtrl",
                     controllerAs: "vm",
                     templateUrl: "/App/Common/Views/Index.html"
                 }).
                 when("/Project", {
-                    controller: "projectListCtrl",
+                    controller: "ProjectListCtrl",
                     controllerAs: "vm",
                     templateUrl: "/App/Project/Views/projectListView.html"
                     //resolve: {
                     //    projects: function (projectService) {
-                    //        return projectService.query(function (data) { })
+                    //        return projectService.getProjectsList.query(function (data) {
+                    //            return data;
+                    //        });
                     //    }
                     //}
                 }).                

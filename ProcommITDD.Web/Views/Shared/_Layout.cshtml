@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="ITDD">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -38,7 +38,9 @@
 
             <!-- Main view  -->
             @*@RenderBody()*@
-            <div id="container" ng-view></div>
+            <div id="container" ng-app="ITDD">
+                <div ng-view=""></div>
+            </div>
 
             <!-- Footer -->
             @Html.Partial("_Footer")

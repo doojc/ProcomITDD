@@ -1,7 +1,7 @@
 
-<link href="~/Content/ddPlatform.css" rel="stylesheet" />
-<link href="~/Content/uigrid/ui-grid.min.css" rel="stylesheet" />
-<link href="~/Content/plugins/datapicker/angular-datapicker.css" rel="stylesheet" />
+<link href="/Content/ddPlatform.css" rel="stylesheet" />
+<link href="/Content/uigrid/ui-grid.min.css" rel="stylesheet" />
+<link href="/Content/plugins/datapicker/angular-datapicker.css" rel="stylesheet" />
 
 <div>
     <div class="wrapper wrapper-content animated fadeInRight">
@@ -38,12 +38,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div ng-init="getProjectsList()">
-                            <div ng-repeat="project in vm.projects">
-                                <span>{{project.Id}}</span>
-                            </div>
-                            <div ng-repeat="project in projects">
-                                <span>{{project.Id}}</span>
+                        <div>
+                            <div class="panel panel-primary">
+
+                                <div class="panel-heading"
+                                     style="font-size:large">
+                                    Project List
+                                </div>
+
+                                <div class="panel-body">
+                                    <div ng-hide="vm.projects.length" class="text-center">
+                                        {{vm.message}}
+                                    </div>
+                                    <table class="table" ng-show="vm.projects.length">
+                                        <thead>
+                                            <tr>
+                                                <td>ProjectId</td>
+                                                <td>Project Name</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="project in vm.projects">
+                                                <td>{{ project.ProjectId}}</td>
+                                                <td>{{ project.ProjectName }}</td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <!--<div ng-init="loadProjects()"
@@ -56,8 +78,6 @@
     </div>
 </div>
 
-<script src="~/Scripts/angularjs/1.4.7/angular.min.js"></script>
-<script src="~/Scripts/plugins/uigrid/ui-grid.min.js"></script>
-<script src="~/Scripts/app/project.js"></script>
-<script src="~/Scripts/plugins/datapicker/angular-datepicker.js"></script>
+<script src="/Scripts/plugins/uigrid/ui-grid.min.js"></script>
+
 

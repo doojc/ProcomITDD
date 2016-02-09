@@ -3,13 +3,12 @@
 
     angular
         .module("common.services")
-        .factory("projectService",
-                ["$resource",
-                 "appSettings",                 
-                    projectService])
+        .factory("projectService", ["$resource", "appSettings", projectService]);
 
     function projectService($resource, appSettings) {
-        return $resource(appSettings.serverPath + "/api/project/:id");
+        return {
+            getProjectsList: $resource('/api/project')
+        }
     }
 }());
 
