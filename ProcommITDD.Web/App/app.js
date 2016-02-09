@@ -1,13 +1,13 @@
 (function () {
     "use strict";
 
-    angular.module("ITDD", ['ngRoute','common.services'])
+    angular.module("ITDD", ['ngRoute','common.services', 'ui.grid', 'ui.grid.pagination'])
         .config(function ($routeProvider, $locationProvider) {
 
             $routeProvider.
                 when("/", {
-                    controller: "ProjectListCtrl",
-                    controllerAs: "vm",
+                    //controller: "ProjectListCtrl",
+                    //controllerAs: "vm",
                     templateUrl: "/App/Common/Views/Index.html"
                 }).
                 when("/Project", {

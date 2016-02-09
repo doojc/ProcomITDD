@@ -7,6 +7,7 @@ using ProcommITDD.Library.Services.Interfaces;
 using ProcommITDD.Library.Services.Implementation;
 using Unity.WebApi;
 using System.Web.Http;
+using ProcommITDD.Library.Infrastructure.Logging;
 
 namespace ProcommITDD.Web
 {
@@ -22,6 +23,7 @@ namespace ProcommITDD.Web
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IProjectRepository, ProjectRepository>();
             container.RegisterType<IProjectService, ProjectService>();
+            container.RegisterType<ILogger, NLogAdapter>();
             
             DependencyResolver.SetResolver(new Unity.Mvc5.UnityDependencyResolver(container));
             GlobalConfiguration.Configuration.DependencyResolver = new Unity.WebApi.UnityDependencyResolver(container);

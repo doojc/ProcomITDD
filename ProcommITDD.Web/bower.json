@@ -1,0 +1,27 @@
+{
+  "name": "ProcommITDD.Web",
+  "homepage": "https://github.com/doojc/ProcomITDD",
+  "authors": [
+    "doojc <dujso.edin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "jquery-validation": "^1.14.0",
+    "jquery-validation-unobtrusive": "^3.2.5",
+    "modernizr": "^3.3.1",
+    "bootstrap": "^3.3.6",
+    "respond": "respond-minmax#^1.4.2",
+    "angular": "1.5.0"
+  }
+}

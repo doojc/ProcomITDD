@@ -53,23 +53,27 @@
                                     <table class="table" ng-show="vm.projects.length">
                                         <thead>
                                             <tr>
-                                                <td>ProjectId</td>
-                                                <td>Project Name</td>
+                                                <td>State</td>
+                                                <td>Project</td>
+                                                <td>Completion</td>                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr ng-repeat="project in vm.projects">
-                                                <td>{{ project.ProjectId}}</td>
-                                                <td>{{ project.ProjectName }}</td>
-
+                                                <td>{{ project.State}}</td>
+                                                <td>{{ project.ProjectName }} | {{project.CreatedDate}}</td>
+                                                <td>{{project.Completion}}</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
+                            <div class="alert-danger" ng-show="vm.errorMessage">
+                                {{vm.errorMessage}}
+                            </div>
                         </div>
-                        <!--<div ng-init="loadProjects()"
-                            <div id="dgProjects" ui-grid="gridOptions"></div>
+                        <!--<div>
+                            <div id="dgProjects" ui-grid="vm.gridOptions"></div>
                         </div>-->
                     </div>
                 </div>

@@ -23,7 +23,8 @@ namespace ProcommITDD.Web
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                       "~/Scripts/angular.min.js",
                       "~/Scripts/angular-route.min.js",
-                      "~/Scripts/angular-resource.min.js"));
+                      "~/Scripts/angular-resource.min.js",
+                      "~/Scripts/plugins/uigrid/ui-grid.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/uigrid").Include(
                      "~/Scripts/angular.js"));
